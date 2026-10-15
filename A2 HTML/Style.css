@@ -1,0 +1,42 @@
+body{
+    background-color: darkslategrey;
+}
+header{
+    background-color:firebrick;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+aside{
+    background-color:bisque;
+    width: 300px;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.container{
+    display: flex;
+    gap: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#picture1{
+    width: 600px;
+    height: 600px;
+}
+
+main{
+    text-align: center;
+}
+
+footer{
+    margin-top: 20px;
+}
