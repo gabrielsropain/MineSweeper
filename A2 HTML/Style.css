@@ -11,8 +11,12 @@ header{
 
 aside{
     background-color:bisque;
-    width: 300px;
-    height: auto;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav{
@@ -23,14 +27,14 @@ nav{
 
 .container{
     display: flex;
-    gap: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
+    gap: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 #picture1{
     width: 600px;
-    height: 600px;
+    height: 700px;
 }
 
 main{
@@ -40,3 +44,4 @@ main{
 footer{
     margin-top: 20px;
 }
+
