@@ -91,10 +91,27 @@ class Board{ //this constructs the board using a two anidated fors, one for the 
 
     floodFill(row, col){
         const cell = this.getCell(row, col);
-        if (cel === null || cell.state !== CellState.HIDDEN){
-            return null;
+        if (cell === null || cell.state !== CellState.HIDDEN){
+            return;
         }
-        cell.reveal()
+        cell.reveal();
+        const neighbors = this.getNeighbors(row, col);
+        if(cell.adjacentMines === 0){
+            for (let c of neighbors){
+                this.floodFill(c.row, c.col);
+            }
+        }
+    }
+
+    revealAllMines(){
+        for (let r=0; r<this.rows; r++){
+            for (let c = 0; c<this.cols; c++){
+                const cell = this.getCell(r,c);
+                if (cell.hasMine === true){
+                    cell.reveal();
+                }
+            }
+        }
     }
 
 }
