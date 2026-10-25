@@ -19,15 +19,21 @@
             <main>
                 <section id="Home">
                     <h1>Welcome to the MineSweeper Game</h1>
-                    <img id ="picture1" src="images/MineSweeper_picture.png" alt="Reference picture">
+                     <div class = "game-panel">
+                        <span id ="mines-counter"> 0</span>
+                        <button id = "restart-button">😊</button>
+                        <span id = "timer-display">0</span>
+                    </div>
+                    <div class = "board"></div>
                 </section>
-                <section id="#HowToPlay">
+                <section id="HowToPlay">
                     <h1>How to play</h1>
                     <p>The goal of Minesweeper is to uncover all the safe squares on the grid without clicking on a hidden mine. When you left-click a square, it will either reveal a mine (which means you lose) or a number from 1 to 8, which tells you exactly how many mines are touching that specific square in any direction, including diagonally. You use these numbers as clues to deduce where the mines are hidden, right-clicking those suspect squares to mark them with a flag so you don't accidentally click them later. You win the game once every single square that does not contain a mine has been safely opened.</p>
                 </section>
                 <section id = "Levels">
                     <h1>Levels</h1>
                     <p>Only one level available right now. More levels are coming soon.</p>
+                   
                 </section>
                 <section id="About">
                     <h1>About</h1>
@@ -36,5 +42,6 @@
             </main>
         </div>
         <footer>© 2026 Gabriel Samper · Vancouver Film School</footer>
+        <script type="module" src="scripts/main.js"></script>
     </body>
 </html>

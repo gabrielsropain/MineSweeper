@@ -1,4 +1,5 @@
 import Cell from "./Cell.js";
+import CellState from "./CellState.js";
 class Board{ //this constructs the board using a two anidated fors, one for the columns and the other one for the rows.
     constructor(rows, cols, quanMines){
         this.rows = rows; 
